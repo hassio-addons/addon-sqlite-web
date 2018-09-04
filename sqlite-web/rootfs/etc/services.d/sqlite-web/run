@@ -1,0 +1,18 @@
+#!/usr/bin/with-contenv bash
+# ==============================================================================
+# Community Hass.io Add-ons: SQLite Web
+# Runs SQLite Web
+# ==============================================================================
+# shellcheck disable=SC1091
+source /usr/lib/hassio-addons/base.sh
+
+if hass.config.true 'read_only'; then
+  args="-H 0.0.0.0 -x /config/$(hass.config.get 'database_path') -r"
+else
+  hass.log.warning "Read only is disabled, this can be dangerous!"
+  args="-H 0.0.0.0 -x /config/$(hass.config.get 'database_path')"
+fi
+
+hass.log.debug "Running SQLite Web with: ${args}"
+
+exec sqlite_web ${args}
