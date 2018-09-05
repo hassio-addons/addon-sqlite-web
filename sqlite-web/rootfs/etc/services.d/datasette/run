@@ -1,0 +1,20 @@
+#!/usr/bin/with-contenv bash
+# ==============================================================================
+# Community Hass.io Add-ons: SQLite Web
+# Runs Datasette
+# ==============================================================================
+# shellcheck disable=SC1091
+source /usr/lib/hassio-addons/base.sh
+
+if hass.config.false 'datasette'; then
+    while true; do
+      hass.log.debug 'Datasette are not enabled...'
+      exec sleep 86400
+    done
+fi
+
+args="/config/$(hass.config.get 'database_path')"
+
+hass.log.debug "Running Datasette with: ${args}"
+
+exec datasette serve ${args}

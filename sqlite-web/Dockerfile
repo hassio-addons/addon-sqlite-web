@@ -5,9 +5,6 @@ FROM ${BUILD_FROM}
 # Set shell
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
-# Sets working directory
-#WORKDIR /data
-
 # Setup base
 RUN \
   apk add --no-cache --virtual .build-dependencies \
@@ -22,19 +19,16 @@ RUN \
   && python3 -m pip install --no-cache-dir --upgrade \
     pip==18.0 \
     setuptools==40.2.0 \
-  && python3 -m pip install --no-cache-dir \
+  && python3 -m pip install --no-cache-dir  \
     cython==0.28 \
-  && python3 -m pip install --no-cache-dir \
     flask==1.0.2 \
     peewee==3.6.4 \
     sqlite-web==0.3.4 \
+    datasette==0.24 \
   && apk del --purge .build-dependencies \
   && find /usr/lib/python3.6/ -type d -name test -depth -exec rm -rf {} \; \
   && find /usr/lib/python3.6/ -type d -name tests -depth -exec rm -rf {} \; \
   && find /usr/lib/python3.6/ -name __pycache__ -depth -exec rm -rf {} \;
-
-# TODO Move up
-ENV LANG en_US.utf8
 
 # Copy root filesystem
 COPY rootfs /

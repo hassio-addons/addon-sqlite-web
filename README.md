@@ -60,6 +60,7 @@ Example add-on configuration:
   "log_level": "info",
   "database_path": "home-assistant_v2.db",
   "read_only": true,
+  "datasette": false,
   "username": "MarryPoppins",
   "password": "Supercalifragilisticexpialidocious",
   "ssl": true,
@@ -97,6 +98,11 @@ The path for the database file relative to `/config/`
 
 Open the database in read only mode if `true`.\
 **It is not recommended setting this to `false`, this will enable you to corrupt the database!**
+
+### Option: `datasette`
+
+This option enables the optional service [Datasette] that can serve as an API to your DB.
+This endpoint will be exposed to port `6220`
 
 ### Option: `username`
 
@@ -261,6 +267,7 @@ SOFTWARE.
 [commits-shield]: https://img.shields.io/github/commit-activity/y/hassio-addons/addon-sqlite-web.svg
 [commits]: https://github.com/hassio-addons/addon-sqlite-web/commits/master
 [contributors]: https://github.com/hassio-addons/addon-sqlite-web/graphs/contributors
+[Datasette]: https://github.com/simonw/datasette
 [discord-ha]: https://discord.gg/c5DvZ4e
 [discord-shield]: https://img.shields.io/discord/478094546522079232.svg
 [discord]: https://discord.me/hassioaddons

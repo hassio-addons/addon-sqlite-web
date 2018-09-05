@@ -7,10 +7,10 @@
 source /usr/lib/hassio-addons/base.sh
 
 if hass.config.true 'read_only'; then
-  args="-H 0.0.0.0 -x /config/$(hass.config.get 'database_path') -r"
+  args="-H 0.0.0.0 -x /config/$(hass.config.get 'database_path') -r --no-browser"
 else
   hass.log.warning "Read only is disabled, this can be dangerous!"
-  args="-H 0.0.0.0 -x /config/$(hass.config.get 'database_path')"
+  args="-H 0.0.0.0 -x /config/$(hass.config.get 'database_path') --no-browser"
 fi
 
 hass.log.debug "Running SQLite Web with: ${args}"
