@@ -14,7 +14,7 @@ RUN \
     python3-dev=3.6.6-r0 \
   && apk add --no-cache \
     apache2-utils=2.4.34-r0 \
-    nginx=1.14.0-r0 \
+    nginx=1.14.0-r1 \
     python3=3.6.6-r0 \
   && python3 -m pip install --no-cache-dir --upgrade \
     pip==18.0 \
