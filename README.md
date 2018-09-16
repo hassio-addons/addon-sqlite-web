@@ -96,12 +96,14 @@ The path for the database file relative to `/config/`
 
 ### Option: `read_only`
 
-Open the database in read only mode if `true`.\
-**It is not recommended setting this to `false`, this will enable you to corrupt the database!**
+Open the database in read only mode if `true`.
+**It is not recommended setting this to `false`,
+this will enable you to corrupt the database!**
 
 ### Option: `datasette`
 
-This option enables the optional service [Datasette] that can serve as an API to your DB.
+This option enables the optional service [Datasette]
+that can serve as an API to your DB.
 This endpoint will be exposed to port `6220`
 
 ### Option: `username`
