@@ -275,7 +275,7 @@ SOFTWARE.
 [discord]: https://discord.me/hassioaddons
 [dockerhub]: https://hub.docker.com/r/hassioaddons/sqlite-web
 [forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg
-[forum]: https://community.home-assistant.io/
+[forum]: https://community.home-assistant.io/t/community-hass-io-add-on-sqlite-web/68912
 [ludeeus]: https://github.com/ludeeus
 [gitlabci-shield]: https://gitlab.com/hassio-addons/addon-sqlite-web/badges/master/pipeline.svg
 [gitlabci]: https://gitlab.com/hassio-addons/addon-sqlite-web/pipelines
