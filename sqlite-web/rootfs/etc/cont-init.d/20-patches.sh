@@ -9,4 +9,4 @@ mv /www/favicon.png /usr/lib/python3.6/site-packages/sqlite_web/static/img/
 patch /usr/lib/python3.6/site-packages/sqlite_web/templates/base.html /patches/favicon
 
 # Adds buymeacoffe link
-patch /usr/lib/python3.6/site-packages/sqlite_web/templates/base_tables.html /patches/buymeacoffe
+patch /usr/lib/python3.6/site-packages/sqlite_web/templates/base_tables.html /patches/buymeacoffee
