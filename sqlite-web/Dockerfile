@@ -16,11 +16,8 @@ RUN \
     apache2-utils=2.4.34-r0 \
     nginx=1.14.0-r1 \
     python3=3.6.6-r0 \
-  && python3 -m pip install --no-cache-dir --upgrade \
-    pip==18.0 \
-    setuptools==40.2.0 \
-  && python3 -m pip install --no-cache-dir  \
-    cython==0.28 \
+    cython=0.28.2-r0 \
+  && pip3 install --no-cache-dir  \
     flask==1.0.2 \
     peewee==3.6.4 \
     sqlite-web==0.3.4 \
