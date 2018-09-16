@@ -17,4 +17,4 @@ args="/config/$(hass.config.get 'database_path')"
 
 hass.log.debug "Running Datasette with: ${args}"
 
-exec datasette serve ${args}
+exec datasette serve "${args}"

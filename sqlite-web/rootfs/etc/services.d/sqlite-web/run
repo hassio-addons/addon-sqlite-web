@@ -6,13 +6,16 @@
 # shellcheck disable=SC1091
 source /usr/lib/hassio-addons/base.sh
 
+declare -a options
+
+options+=(-H 0.0.0.0)
+options+=(--no-browser)
+options+=(-x "/config/$(hass.config.get 'database_path')")
+
 if hass.config.true 'read_only'; then
-  args="-H 0.0.0.0 -x /config/$(hass.config.get 'database_path') -r --no-browser"
-else
-  hass.log.warning "Read only is disabled, this can be dangerous!"
-  args="-H 0.0.0.0 -x /config/$(hass.config.get 'database_path') --no-browser"
+  options+=(-r)
 fi
 
-hass.log.debug "Running SQLite Web with: ${args}"
+hass.log.info 'Starting SQLite Web'
 
-exec sqlite_web ${args}
+exec sqlite_web "${options[@]}"
