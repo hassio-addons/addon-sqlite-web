@@ -1,7 +1,7 @@
 ---
 repository:
   description: "SQLite Web - Community Hass.io Add-on for Home Assistant"
-  homepage: https://community.home-assistant.io/t/community-hass-io-add-on-sqlite-web/68912
+  homepage: https://addons.community
   topics: sql, sqlite, sqlite-web, database, hassio-addons, hassio, hass, home-assistant, homeassistant
   private: false
   has_issues: true
