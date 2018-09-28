@@ -20,7 +20,7 @@ RUN \
   && pip3 install --no-cache-dir  \
     flask==1.0.2 \
     peewee==3.7.0 \
-    sqlite-web==0.3.4 \
+    sqlite-web==0.3.5 \
     datasette==0.25 \
   && apk del --purge .build-dependencies \
   && find /usr/lib/python3.6/ -type d -name test -depth -exec rm -rf {} \; \
