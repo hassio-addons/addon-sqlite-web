@@ -8,8 +8,8 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 # Setup base
 RUN \
   apk add --no-cache --virtual .build-dependencies \
-    g++=6.4.0-r8 \
-    gcc=6.4.0-r8 \
+    g++=6.4.0-r9 \
+    gcc=6.4.0-r9 \
     make=4.2.1-r2 \
     python3-dev=3.6.6-r0 \
   && apk add --no-cache \
@@ -19,9 +19,9 @@ RUN \
     cython=0.28.2-r0 \
   && pip3 install --no-cache-dir  \
     flask==1.0.2 \
-    peewee==3.6.4 \
-    sqlite-web==0.3.4 \
-    datasette==0.24 \
+    peewee==3.7.0 \
+    sqlite-web==0.3.5 \
+    datasette==0.25 \
   && apk del --purge .build-dependencies \
   && find /usr/lib/python3.6/ -type d -name test -depth -exec rm -rf {} \; \
   && find /usr/lib/python3.6/ -type d -name tests -depth -exec rm -rf {} \; \
