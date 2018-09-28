@@ -8,8 +8,8 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 # Setup base
 RUN \
   apk add --no-cache --virtual .build-dependencies \
-    g++=6.4.0-r8 \
-    gcc=6.4.0-r8 \
+    g++=6.4.0-r9 \
+    gcc=6.4.0-r9 \
     make=4.2.1-r2 \
     python3-dev=3.6.6-r0 \
   && apk add --no-cache \
