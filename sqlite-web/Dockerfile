@@ -21,7 +21,7 @@ RUN \
     flask==1.0.2 \
     peewee==3.6.4 \
     sqlite-web==0.3.4 \
-    datasette==0.24 \
+    datasette==0.25 \
   && apk del --purge .build-dependencies \
   && find /usr/lib/python3.6/ -type d -name test -depth -exec rm -rf {} \; \
   && find /usr/lib/python3.6/ -type d -name tests -depth -exec rm -rf {} \; \
