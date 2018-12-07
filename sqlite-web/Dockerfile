@@ -13,15 +13,15 @@ RUN \
     make=4.2.1-r2 \
     python3-dev=3.6.6-r0 \
   && apk add --no-cache \
-    apache2-utils=2.4.34-r0 \
-    nginx=1.14.0-r1 \
+    apache2-utils=2.4.35-r0 \
+    nginx=1.14.1-r0 \
     python3=3.6.6-r0 \
     cython=0.28.2-r0 \
   && pip3 install --no-cache-dir  \
     flask==1.0.2 \
-    peewee==3.7.0 \
+    peewee==3.7.1 \
     sqlite-web==0.3.5 \
-    datasette==0.25 \
+    datasette==0.25.1 \
   && apk del --purge .build-dependencies \
   && find /usr/lib/python3.6/ -type d -name test -depth -exec rm -rf {} \; \
   && find /usr/lib/python3.6/ -type d -name tests -depth -exec rm -rf {} \; \
