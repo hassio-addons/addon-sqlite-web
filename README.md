@@ -177,7 +177,7 @@ panel_iframe:
   sqlite-web:
     title: SQLite Web
     icon: mdi:database
-    url: http://addres.to.your.hass.io:4444
+    url: https://address.to.your.hass.io:6210
 ```
 
 ## Changelog & Releases
