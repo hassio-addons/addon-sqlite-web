@@ -14,7 +14,7 @@ RUN \
     python3-dev=3.6.6-r0 \
   && apk add --no-cache \
     apache2-utils=2.4.35-r0 \
-    nginx=1.14.1-r0 \
+    nginx=1.14.2-r0 \
     python3=3.6.6-r0 \
     cython=0.28.2-r0 \
   && pip3 install --no-cache-dir  \
