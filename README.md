@@ -285,7 +285,7 @@ SOFTWARE.
 [keepchangelog]: http://keepachangelog.com/en/1.0.0/
 [layers-shield]: https://images.microbadger.com/badges/image/hassioaddons/sqlite-web.svg
 [license-shield]: https://img.shields.io/github/license/hassio-addons/addon-sqlite-web.svg
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2018.svg
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2019.svg
 [microbadger]: https://microbadger.com/images/hassioaddons/sqlite-web
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
 [pulls-shield]: https://img.shields.io/docker/pulls/hassioaddons/sqlite-web.svg
