@@ -174,7 +174,7 @@ Example configuration:
 
 ```yaml
 panel_iframe:
-  sqlite-web:
+  sqlite_web:
     title: SQLite Web
     icon: mdi:database
     url: https://address.to.your.hass.io:6210
