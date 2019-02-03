@@ -13,7 +13,7 @@ RUN \
     make=4.2.1-r2 \
     python3-dev=3.6.6-r0 \
   && apk add --no-cache \
-    apache2-utils=2.4.35-r0 \
+    apache2-utils=2.4.38-r3 \
     nginx=1.14.2-r0 \
     python3=3.6.6-r0 \
     cython=0.28.2-r0 \
