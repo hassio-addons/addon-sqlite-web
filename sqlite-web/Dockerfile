@@ -19,7 +19,7 @@ RUN \
     cython=0.28.2-r0 \
   && pip3 install --no-cache-dir  \
     flask==1.0.2 \
-    peewee==3.8.2 \
+    peewee==3.9.2 \
     sqlite-web==0.3.5 \
     datasette==0.27 \
   && apk del --purge .build-dependencies \
