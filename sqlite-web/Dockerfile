@@ -17,11 +17,8 @@ RUN \
     nginx=1.14.2-r0 \
     python3=3.6.6-r0 \
     cython=0.28.2-r0 \
-  && pip3 install --no-cache-dir  \
-    flask==1.0.2 \
-    peewee==3.9.2 \
-    sqlite-web==0.3.5 \
-    datasette==0.27 \
+  && pip3 install --no-cache-dir -U -r /tmp/requirements.txt \
+  && rm -f -r /tmp/* \
   && apk del --purge .build-dependencies \
   && find /usr/lib/python3.6/ -type d -name test -depth -exec rm -rf {} \; \
   && find /usr/lib/python3.6/ -type d -name tests -depth -exec rm -rf {} \; \
