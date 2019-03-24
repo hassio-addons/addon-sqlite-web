@@ -16,7 +16,8 @@ RUN \
     make=4.2.1-r2 \
     python3-dev=3.6.8-r1 \
   && apk add --no-cache \
-    apache2-utils=2.4.38-r2 \
+    lua-resty-http=0.12-r1 \
+    nginx-mod-http-lua=1.14.2-r0 \
     nginx=1.14.2-r0 \
     python3=3.6.8-r1 \
     cython=0.29.2-r0 \

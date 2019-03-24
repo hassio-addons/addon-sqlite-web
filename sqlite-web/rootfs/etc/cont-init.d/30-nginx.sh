@@ -23,13 +23,3 @@ fi
 if ! bashio::config.true 'ipv6'; then
     sed -i '/listen \[::\].*/ d' /etc/nginx/nginx.conf
 fi
-
-# Handles the HTTP auth part
-if ! bashio::config.has_value 'username'; then
-    bashio::log.warning "Username/password protection is disabled!"
-    sed -i '/auth_basic.*/d' /etc/nginx/nginx.conf
-else
-    username=$(bashio::config 'username')
-    password=$(bashio::config 'password')
-    htpasswd -bc /etc/nginx/.htpasswd "${username}" "${password}"
-fi

@@ -31,6 +31,7 @@ comparison to installing any other Hass.io add-on.
 1. Start the "SQLite Web" add-on
 1. Check the logs of the "SQLite Web" add-on to see if everything went well.
 1. Click "OPEN WEB UI" to open the SQLite Web interface.
+1. Log in with your Home Assistant user.
 
 **NOTE**: Starting the add-on might take a couple of minutes (especially the
 first time starting the add-on).
@@ -60,8 +61,6 @@ Example add-on configuration:
   "database_path": "home-assistant_v2.db",
   "read_only": true,
   "datasette": false,
-  "username": "MarryPoppins",
-  "password": "Supercalifragilisticexpialidocious",
   "ssl": true,
   "certfile": "fullchain.pem",
   "keyfile": "privkey.pem",
@@ -105,25 +104,6 @@ This option enables the optional service [Datasette]
 that can serve as an API to your DB.
 This endpoint will be exposed to port `6220`
 
-### Option: `username`
-
-Username for authenticating with the SQLite Web interface. Leaving the username
-field empty, will disable the authentication mechanism entirely.
-
-Setting a username/password can be added as an extra line of defense,
-to prevent users of using your installation for themselves.
-
-This option is HIGHLY recommended in case you expose this add-on to the outside
-world.
-
-**Note**: _This option support secrets, e.g., `!secret sqlite-web_username`._
-
-### Option: `password`
-
-Password for authenticating with SQLite Web interface.
-
-**Note**: _This option support secrets, e.g., `!secret sqlite-web_password`._
-
 ### Option: `ssl`
 
 Enables/Disables SSL (HTTPS) on the web interface of SQLite Web. Set it `true`
@@ -144,23 +124,6 @@ The private key file to use for SSL.
 ### Option: `ipv6`
 
 Set this option too `false` to disable IPv6 support.
-
-### Option: `i_like_to_be_pwned`
-
-Adding this option to the add-on configuration allows to you bypass the
-HaveIBeenPwned password requirement by setting it to `true`.
-
-**Note**: _We STRONGLY suggest picking a stronger/safer password instead of
-using this option! USE AT YOUR OWN RISK!_
-
-### Option: `leave_front_door_open`
-
-Adding this option to the add-on configuration allows you to disable
-authentication on the add-on by setting it to `true` and leaving the
-username and password empty.
-
-**Note**: _We STRONGLY suggest, not to use this, even if this add-on is
-only exposed to your internal network. USE AT YOUR OWN RISK!_
 
 ## Embedding into Home Assistant
 
