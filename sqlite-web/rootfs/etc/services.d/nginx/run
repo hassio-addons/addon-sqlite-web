@@ -1,13 +1,11 @@
-#!/usr/bin/with-contenv bash
+#!/usr/bin/with-contenv bashio
 # ==============================================================================
 # Community Hass.io Add-ons: SQLite Web
 # Runs the NGINX daemon
 # ==============================================================================
-# shellcheck disable=SC1091
-source /usr/lib/hassio-addons/base.sh
 
 # Wait for SQLite Web to become available
 s6-svwait -u -t 5000 /var/run/s6/services/sqlite-web
 
-hass.log.info "Starting NGINX..."
+bashio::log.info "Starting NGINX..."
 exec nginx -g "daemon off;"

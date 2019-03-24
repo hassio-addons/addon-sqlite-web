@@ -1,20 +1,18 @@
-#!/usr/bin/with-contenv bash
+#!/usr/bin/with-contenv bashio
 # ==============================================================================
 # Community Hass.io Add-ons: SQLite Web
 # Runs Datasette
 # ==============================================================================
-# shellcheck disable=SC1091
-source /usr/lib/hassio-addons/base.sh
 
-if hass.config.false 'datasette'; then
+if bashio::config.false 'datasette'; then
     while true; do
-      hass.log.debug 'Datasette are not enabled...'
+      bashio::log.debug 'Datasette are not enabled...'
       exec sleep 86400
     done
 fi
 
-args="/config/$(hass.config.get 'database_path')"
+args="/config/$(bashio::config 'database_path')"
 
-hass.log.debug "Running Datasette with: ${args}"
+bashio::log.debug "Running Datasette with: ${args}"
 
 exec datasette serve "${args}"
