@@ -5,6 +5,9 @@ FROM ${BUILD_FROM}
 # Set shell
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
+# Copy Python requirements file
+COPY requirements.txt /tmp/
+
 # Setup base
 RUN \
   apk add --no-cache --virtual .build-dependencies \
