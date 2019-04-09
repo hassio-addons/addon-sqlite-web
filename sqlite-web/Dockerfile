@@ -12,7 +12,7 @@ COPY requirements.txt /tmp/
 RUN \
   apk add --no-cache --virtual .build-dependencies \
     g++=8.2.0-r2 \
-    gcc=8.2.0-r2 \
+    gcc=8.3.0-r0 \
     make=4.2.1-r2 \
     python3-dev=3.6.8-r1 \
   && apk add --no-cache \
