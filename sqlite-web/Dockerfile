@@ -19,7 +19,7 @@ RUN \
     lua-resty-http=0.12-r1 \
     nginx-mod-http-lua=1.14.2-r0 \
     nginx=1.14.2-r0 \
-    python3=3.6.8-r1 \
+    python3=3.6.8-r2 \
     cython=0.29.2-r0 \
   && pip3 install --no-cache-dir -U -r /tmp/requirements.txt \
   && rm -f -r /tmp/* \
