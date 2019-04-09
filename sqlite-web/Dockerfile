@@ -14,7 +14,7 @@ RUN \
     g++=8.2.0-r2 \
     gcc=8.2.0-r2 \
     make=4.2.1-r2 \
-    python3-dev=3.6.8-r1 \
+    python3-dev=3.6.8-r2 \
   && apk add --no-cache \
     lua-resty-http=0.12-r1 \
     nginx-mod-http-lua=1.14.2-r0 \
