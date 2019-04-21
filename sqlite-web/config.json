@@ -28,7 +28,6 @@
     "config:rw"
   ],
   "options": {
-    "log_level": "info",
     "database_path": "home-assistant_v2.db",
     "read_only": true,
     "datasette": false,
@@ -38,7 +37,7 @@
     "ipv6": false
   },
   "schema": {
-    "log_level": "match(^(trace|debug|info|notice|warning|error|fatal)$)",
+    "log_level": "match(^(trace|debug|info|notice|warning|error|fatal)$)?",
     "database_path": "str",
     "read_only": "bool",
     "datasette": "bool",
