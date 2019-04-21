@@ -1,4 +1,4 @@
-ARG BUILD_FROM=hassioaddons/base:3.0.1
+ARG BUILD_FROM=hassioaddons/base-python:1.1.0
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -14,19 +14,17 @@ RUN \
     g++=8.2.0-r2 \
     gcc=8.2.0-r2 \
     make=4.2.1-r2 \
-    python3-dev=3.6.8-r1 \
+  \
   && apk add --no-cache \
     lua-resty-http=0.12-r1 \
     nginx-mod-http-lua=1.14.2-r0 \
     nginx=1.14.2-r0 \
-    python3=3.6.8-r1 \
     cython=0.29.2-r0 \
+  \
   && pip3 install --no-cache-dir -U -r /tmp/requirements.txt \
-  && rm -f -r /tmp/* \
+  \
   && apk del --purge .build-dependencies \
-  && find /usr/lib/python3.6/ -type d -name test -depth -exec rm -rf {} \; \
-  && find /usr/lib/python3.6/ -type d -name tests -depth -exec rm -rf {} \; \
-  && find /usr/lib/python3.6/ -name __pycache__ -depth -exec rm -rf {} \;
+  && rm -f -r /tmp/*
 
 # Copy root filesystem
 COPY rootfs /
