@@ -4,6 +4,7 @@
         "aarch64": "hassioaddons/base-python-aarch64:1.1.0",
         "amd64": "hassioaddons/base-python-amd64:1.1.0",
         "armhf": "hassioaddons/base-python-armhf:1.1.0",
+        "armv7": "hassioaddons/base-python-armv7:1.1.0",
         "i386": "hassioaddons/base-python-i386:1.1.0"
     }
 }
