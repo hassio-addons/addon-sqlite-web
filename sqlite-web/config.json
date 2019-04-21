@@ -21,6 +21,10 @@
     "6210/tcp": 6210,
     "6220/tcp": 6220
   },
+  "ports_description": {
+    "6210/tcp": "SQLite Web interface",
+    "6220/tcp": "Datasette API endpoint"
+  },
   "map": [
     "ssl",
     "config:rw"
