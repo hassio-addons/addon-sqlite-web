@@ -6,6 +6,7 @@ variables:
   ADDON_SLUG: "sqlite-web"
   ADDON_TARGET: "sqlite-web"
 
+  ADDON_LEGACY_TAGS: "true"
 
   ADDON_AARCH64_BASE: "hassioaddons/base-python-aarch64:1.1.0"
   ADDON_AMD64_BASE: "hassioaddons/base-python-amd64:1.1.0"
