@@ -31,8 +31,7 @@
     "datasette": false,
     "ssl": true,
     "certfile": "fullchain.pem",
-    "keyfile": "privkey.pem",
-    "ipv6": false
+    "keyfile": "privkey.pem"
   },
   "schema": {
     "log_level": "match(^(trace|debug|info|notice|warning|error|fatal)$)?",
@@ -41,8 +40,7 @@
     "datasette": "bool",
     "ssl": "bool",
     "certfile": "str",
-    "keyfile": "str",
-    "ipv6": "bool"
+    "keyfile": "str"
   },
   "environment": {
     "LOG_FORMAT": "{LEVEL}: {MESSAGE}"
