@@ -3,16 +3,14 @@
 # Community Hass.io Add-ons: SQLite Web
 # Runs Datasette
 # ==============================================================================
-
 if bashio::config.false 'datasette'; then
-    while true; do
-      bashio::log.debug 'Datasette are not enabled...'
-      exec sleep 86400
-    done
+  bashio::log.debug 'Datasette is not enabled...'
+  exec sleep 86400
 fi
 
 args="/config/$(bashio::config 'database_path')"
 
+bashio::log.info "Starting Datasette..."
 bashio::log.debug "Running Datasette with: ${args}"
 
 exec datasette serve "${args}"
