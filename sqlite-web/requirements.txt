@@ -1,4 +1,4 @@
 flask==1.0.2
-peewee==3.9.3
+peewee==3.9.4
 sqlite-web==0.3.6
 datasette==0.27
