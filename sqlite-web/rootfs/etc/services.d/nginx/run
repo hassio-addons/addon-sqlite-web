@@ -4,8 +4,8 @@
 # Runs the NGINX daemon
 # ==============================================================================
 
-# Wait for SQLite Web to become available
-s6-svwait -u -t 5000 /var/run/s6/services/sqlite-web
+# Wait for SQLLite Web to start
+bashio::net.wait_for 8080
 
 bashio::log.info "Starting NGINX..."
 exec nginx -g "daemon off;"

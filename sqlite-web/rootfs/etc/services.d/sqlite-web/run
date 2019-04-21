@@ -3,7 +3,6 @@
 # Community Hass.io Add-ons: SQLite Web
 # Runs SQLite Web
 # ==============================================================================
-
 declare -a options
 
 options+=(-H 0.0.0.0)
@@ -14,6 +13,6 @@ if bashio::config.true 'read_only'; then
   options+=(-r)
 fi
 
-bashio::log.info 'Starting SQLite Web'
+bashio::log.info 'Starting SQLite Web...'
 
 exec sqlite_web "${options[@]}"
