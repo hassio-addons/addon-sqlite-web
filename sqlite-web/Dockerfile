@@ -18,7 +18,7 @@ RUN \
   && apk add --no-cache \
     lua-resty-http=0.12-r1 \
     nginx-mod-http-lua=1.14.2-r0 \
-    nginx=1.14.2-r0 \
+    nginx=1.14.2-r1 \
     cython=0.29.2-r0 \
   \
   && pip3 install --no-cache-dir -U -r /tmp/requirements.txt \
