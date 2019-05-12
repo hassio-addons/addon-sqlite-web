@@ -25,6 +25,8 @@ Explore your Home-Assistant database from your web browser!
 
 This enables you to easily explore all tables and content that is saved in your database.
 
+Log in using your HomeAssistant credentials.
+
 ![sample view](/images/sample-view.png)
 
 ## Installation
