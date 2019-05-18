@@ -16,8 +16,8 @@ RUN \
     make=4.2.1-r2 \
   \
   && apk add --no-cache \
-    lua-resty-http=0.12-r1 \
-    nginx-mod-http-lua=1.14.2-r0 \
+    nginx-mod-http-lua=1.14.2-r1 \
+    lua-resty-http=0.13-r0 \
     nginx=1.14.2-r1 \
     cython=0.29.2-r0 \
   \
