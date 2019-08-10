@@ -28,8 +28,15 @@ RUN \
     --find-links "https://wheels.hass.io/alpine-3.10/${BUILD_ARCH}/" \
     -r /tmp/requirements.txt \
   \
+  && find /usr/local \
+    \( -type d -a -name test -o -name tests -o -name '__pycache__' \) \
+    -o \( -type f -a -name '*.pyc' -o -name '*.pyo' \) \
+    -exec rm -rf '{}' + \
+  \
   && apk del --purge .build-dependencies \
-  && rm -f -r /tmp/*
+  && rm -f -r \
+    /etc/nginx \
+    /tmp/*
 
 # Copy root filesystem
 COPY rootfs /
