@@ -116,23 +116,6 @@ The private key file to use for SSL.
 
 **Note**: _The file MUST be stored in `/ssl/`, which is the default for Hass.io_
 
-## Embedding into Home Assistant
-
-It is possible to embed SQLite Web directly into Home Assistant, allowing you to
-access your SQLite Web through the Home Assistant frontend.
-
-Home Assistant provides the `panel_iframe` component, for these purposes.
-
-Example configuration:
-
-```yaml
-panel_iframe:
-  sqlite_web:
-    title: SQLite Web
-    icon: mdi:database
-    url: https://address.to.your.hass.io:6210
-```
-
 ## Changelog & Releases
 
 This repository keeps a change log using [GitHub's releases][releases]
