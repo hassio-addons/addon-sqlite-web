@@ -17,9 +17,9 @@ RUN \
     make=4.2.1-r2 \
   \
   && apk add --no-cache \
-    nginx-mod-http-lua=1.16.1-r0 \
+    nginx-mod-http-lua=1.16.1-r1 \
     lua-resty-http=0.13-r0 \
-    nginx=1.16.1-r0 \
+    nginx=1.16.1-r1 \
     cython=0.29.10-r0 \
   \
   && pip3 install \
