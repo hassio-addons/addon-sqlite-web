@@ -18,7 +18,7 @@ RUN \
   \
   && apk add --no-cache \
     nginx-mod-http-lua=1.16.1-r4 \
-    lua-resty-http=0.13-r0 \
+    lua-resty-http=0.15-r0 \
     nginx=1.16.1-r4 \
     cython=0.29.10-r0 \
   \
