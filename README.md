@@ -32,8 +32,8 @@ This enables you to easily explore all tables and content that is saved in your 
 The installation of this add-on is pretty straightforward and not different in
 comparison to installing any other Hass.io add-on.
 
-1. [Add our Hass.io add-ons repository][repository] to your Hass.io instance.
-1. Install the "SQLite Web" add-on.
+1. Search for the “SQLite Web” add-on in the Hass.io 166 add-on store
+   and install it.
 1. Start the "SQLite Web" add-on
 1. Check the logs of the "SQLite Web" add-on to see if everything went well.
 1. Click "OPEN WEB UI" to open the SQLite Web interface.
@@ -41,9 +41,6 @@ comparison to installing any other Hass.io add-on.
 
 **NOTE**: Starting the add-on might take a couple of minutes (especially the
 first time starting the add-on).
-
-**NOTE**: Do not add this repository to Hass.io, please use:
-`https://github.com/hassio-addons/repository`.
 
 ## Configuration
 
