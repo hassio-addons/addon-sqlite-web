@@ -12,8 +12,8 @@ COPY requirements.txt /tmp/
 ARG BUILD_ARCH=amd64
 RUN \
   apk add --no-cache --virtual .build-dependencies \
-    g++=8.3.0-r0 \
-    gcc=8.3.0-r0 \
+    g++=9.2.0-r3 \
+    gcc=9.2.0-r3 \
     make=4.2.1-r2 \
   \
   && apk add --no-cache \
