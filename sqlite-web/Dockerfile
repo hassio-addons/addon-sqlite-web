@@ -20,7 +20,7 @@ RUN \
     nginx-mod-http-lua=1.16.1-r4 \
     lua-resty-http=0.15-r0 \
     nginx=1.16.1-r4 \
-    cython=0.29.10-r0 \
+    cython=0.29.14-r0 \
   \
   && pip3 install \
     --no-cache-dir \
