@@ -12,13 +12,13 @@ fi
 # Adds favicon
 mv \
     /www/favicon.png \
-    /usr/local/lib/python3.7/site-packages/sqlite_web/static/img/
+    /usr/local/lib/python3.8/site-packages/sqlite_web/static/img/
 
 patch \
-    /usr/local/lib/python3.7/site-packages/sqlite_web/templates/base.html \
+    /usr/local/lib/python3.8/site-packages/sqlite_web/templates/base.html \
     /patches/favicon
 
 # Adds buymeacoffe link
 patch \
-    /usr/local/lib/python3.7/site-packages/sqlite_web/templates/base_tables.html \
+    /usr/local/lib/python3.8/site-packages/sqlite_web/templates/base_tables.html \
     /patches/buymeacoffee
