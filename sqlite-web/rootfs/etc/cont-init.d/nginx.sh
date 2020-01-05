@@ -36,22 +36,24 @@ sed -i "s#%%ingress_entry%%#${ingress_entry}#g" /etc/nginx/servers/ingress.conf
 sed -i "s/%%interface%%/${ingress_interface}/g" /etc/nginx/servers/ingress.conf
 sed -i "s/%%port%%/${ingress_port}/g" /etc/nginx/servers/ingress.conf
 
-port=$(bashio::addon.port 6220)
-if bashio::var.has_value "${port}"; then
-    bashio::config.require.ssl
+if bashio::config.true 'datasette'; then
+    port=$(bashio::addon.port 6220)
+    if bashio::var.has_value "${port}"; then
+        bashio::config.require.ssl
 
-    if bashio::config.true 'ssl'; then
-        certfile=$(bashio::config 'certfile')
-        keyfile=$(bashio::config 'keyfile')
+        if bashio::config.true 'ssl'; then
+            certfile=$(bashio::config 'certfile')
+            keyfile=$(bashio::config 'keyfile')
 
-        mv /etc/nginx/servers/datasette-ssl.disabled \
-            /etc/nginx/servers/datasette.conf
-        sed -i "s#%%certfile%%#${certfile}#g" /etc/nginx/servers/datasette.conf
-        sed -i "s#%%keyfile%%#${keyfile}#g" /etc/nginx/servers/datasette.conf
+            mv /etc/nginx/servers/datasette-ssl.disabled \
+                /etc/nginx/servers/datasette.conf
+            sed -i "s#%%certfile%%#${certfile}#g" /etc/nginx/servers/datasette.conf
+            sed -i "s#%%keyfile%%#${keyfile}#g" /etc/nginx/servers/datasette.conf
 
-    else
-        mv /etc/nginx/servers/datasette.disabled \
-            /etc/nginx/servers/datasette.conf
+        else
+            mv /etc/nginx/servers/datasette.disabled \
+                /etc/nginx/servers/datasette.conf
+        fi
     fi
 fi
 
