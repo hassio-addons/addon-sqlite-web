@@ -4,7 +4,7 @@
 # Configures NGINX for use with SQLite Web
 # ==============================================================================
 declare certfile
-declare hassio_dns
+declare dns_host
 declare ingress_entry
 declare ingress_interface
 declare ingress_port
@@ -57,5 +57,5 @@ if bashio::config.true 'datasette'; then
     fi
 fi
 
-hassio_dns=$(bashio::dns.host)
-sed -i "s/%%hassio_dns%%/${hassio_dns}/g" /etc/nginx/includes/resolver.conf
+dns_host=$(bashio::dns.host)
+sed -i "s/%%dns_host%%/${dns_host}/g" /etc/nginx/includes/resolver.conf
