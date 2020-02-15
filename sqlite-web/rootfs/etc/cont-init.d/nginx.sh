@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bashio
 # ==============================================================================
-# Community Hass.io Add-ons: SQLite Web
+# Home Assistant Community Add-on: SQLite Web
 # Configures NGINX for use with SQLite Web
 # ==============================================================================
 declare certfile

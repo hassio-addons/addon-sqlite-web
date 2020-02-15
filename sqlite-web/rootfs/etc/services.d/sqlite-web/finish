@@ -1,6 +1,6 @@
 #!/usr/bin/execlineb -S0
 # ==============================================================================
-# Community Hass.io Add-ons: SQLite Web
+# Home Assistant Community Add-on: SQLite Web
 # Take down the S6 supervision tree when SQLite Web fails
 # ==============================================================================
 if -n { s6-test $# -ne 0 }
