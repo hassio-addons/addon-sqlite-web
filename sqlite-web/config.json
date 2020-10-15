@@ -22,7 +22,7 @@
     "80/tcp": "SQLite Web interface (Not required for Ingress)",
     "6220/tcp": "Datasette API endpoint"
   },
-  "map": ["ssl", "config:rw"],
+  "map": ["share:rw", "ssl", "config:rw"],
   "options": {
     "database_path": "home-assistant_v2.db",
     "read_only": true,
@@ -34,6 +34,7 @@
   "schema": {
     "log_level": "list(trace|debug|info|notice|warning|error|fatal)?",
     "database_path": "str",
+    "folder_path": "str?",
     "read_only": "bool",
     "datasette": "bool",
     "ssl": "bool",

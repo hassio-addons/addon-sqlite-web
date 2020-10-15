@@ -4,10 +4,13 @@
 # Runs SQLite Web
 # ==============================================================================
 declare -a options
-
+folder_path=/config/
+if bashio::config.has_value 'folder_path'; then
+    folder_path=$(bashio::config 'folder_path')
+fi
 options+=(-H 0.0.0.0)
 options+=(--no-browser)
-options+=(-x "/config/$(bashio::config 'database_path')")
+options+=(-x "$folder_path$(bashio::config 'database_path')")
 
 if bashio::config.true 'read_only'; then
   options+=(-r)
