@@ -25,6 +25,7 @@ RUN \
     cython=0.29.19-r0 \
     patch=2.7.6-r6 \
     python3=3.8.5-r0 \
+    py3-setuptools=47.0.0-r0 \
   \
   && pip3 install \
     --no-cache-dir \
