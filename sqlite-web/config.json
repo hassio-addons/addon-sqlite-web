@@ -34,6 +34,7 @@
   "schema": {
     "log_level": "list(trace|debug|info|notice|warning|error|fatal)?",
     "database_path": "str",
+    "folder_path": "str?",
     "read_only": "bool",
     "datasette": "bool",
     "ssl": "bool",
