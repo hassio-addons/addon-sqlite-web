@@ -19,9 +19,9 @@ RUN \
     python3-dev=3.8.5-r0 \
   \
   && apk add --no-cache \
-    nginx-mod-http-lua=1.18.0-r0 \
+    nginx-mod-http-lua=1.18.0-r1 \
     lua-resty-http=0.15-r0 \
-    nginx=1.18.0-r0 \
+    nginx=1.18.0-r1 \
     cython=0.29.19-r0 \
     patch=2.7.6-r6 \
     python3=3.8.5-r0 \
