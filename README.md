@@ -101,7 +101,7 @@ SOFTWARE.
 [commits-shield]: https://img.shields.io/github/commit-activity/y/hassio-addons/addon-sqlite-web.svg
 [commits]: https://github.com/hassio-addons/addon-sqlite-web/commits/master
 [contributors]: https://github.com/hassio-addons/addon-sqlite-web/graphs/contributors
-[Datasette]: https://github.com/simonw/datasette
+[datasette]: https://github.com/simonw/datasette
 [discord-ha]: https://discord.gg/c5DvZ4e
 [discord-shield]: https://img.shields.io/discord/478094546522079232.svg
 [discord]: https://discord.me/hassioaddons
