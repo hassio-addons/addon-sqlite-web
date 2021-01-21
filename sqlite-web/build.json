@@ -1,5 +1,4 @@
 {
-  "args": {},
   "build_from": {
     "aarch64": "hassioaddons/base-aarch64:8.0.5",
     "amd64": "hassioaddons/base-amd64:8.0.5",
