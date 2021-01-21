@@ -72,7 +72,7 @@ our [GitHub Repository][repository].
 
 MIT License
 
-Copyright (c) 2018-2020 Joakim Sørensen
+Copyright (c) 2018-2021 Joakim Sørensen
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -114,7 +114,7 @@ SOFTWARE.
 [issue]: https://github.com/hassio-addons/addon-sqlite-web/issues
 [license-shield]: https://img.shields.io/github/license/hassio-addons/addon-sqlite-web.svg
 [ludeeus]: https://github.com/ludeeus
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2020.svg
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2021.svg
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
 [reddit]: https://reddit.com/r/homeassistant
 [releases-shield]: https://img.shields.io/github/release/hassio-addons/addon-sqlite-web.svg
