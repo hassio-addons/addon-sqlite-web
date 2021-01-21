@@ -10,7 +10,7 @@
 ![Supports amd64 Architecture][amd64-shield]
 ![Supports i386 Architecture][i386-shield]
 
-[![GitLab CI][gitlabci-shield]][gitlabci]
+[![Github Actions][github-actions-shield]][github-actions]
 ![Project Maintenance][maintenance-shield]
 [![GitHub Activity][commits-shield]][commits]
 
@@ -99,17 +99,17 @@ SOFTWARE.
 [buymeacoffee-shield]: https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-2.svg
 [buymeacoffee]: https://www.buymeacoffee.com/ludeeus
 [commits-shield]: https://img.shields.io/github/commit-activity/y/hassio-addons/addon-sqlite-web.svg
-[commits]: https://github.com/hassio-addons/addon-sqlite-web/commits/master
+[commits]: https://github.com/hassio-addons/addon-sqlite-web/commits/main
 [contributors]: https://github.com/hassio-addons/addon-sqlite-web/graphs/contributors
 [datasette]: https://github.com/simonw/datasette
 [discord-ha]: https://discord.gg/c5DvZ4e
 [discord-shield]: https://img.shields.io/discord/478094546522079232.svg
 [discord]: https://discord.me/hassioaddons
-[docs]: https://github.com/hassio-addons/addon-sqlite-web/blob/master/sqlite-web/DOCS.md
+[docs]: https://github.com/hassio-addons/addon-sqlite-web/blob/main/sqlite-web/DOCS.md
 [forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg
 [forum]: https://community.home-assistant.io/t/home-assistant-community-add-on-sqlite-web/68912?u=frenck
-[gitlabci-shield]: https://gitlab.com/hassio-addons/addon-sqlite-web/badges/master/pipeline.svg
-[gitlabci]: https://gitlab.com/hassio-addons/addon-sqlite-web/pipelines
+[github-actions-shield]: https://github.com/hassio-addons/addon-sqlite-web/workflows/CI/badge.svg
+[github-actions]: https://github.com/hassio-addons/addon-sqlite-web/actions
 [i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
 [issue]: https://github.com/hassio-addons/addon-sqlite-web/issues
 [license-shield]: https://img.shields.io/github/license/hassio-addons/addon-sqlite-web.svg

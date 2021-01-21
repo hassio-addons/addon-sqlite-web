@@ -95,8 +95,7 @@ The private key file to use for SSL.
 ## Changelog & Releases
 
 This repository keeps a change log using [GitHub's releases][releases]
-functionality. The format of the log is based on
-[Keep a Changelog][keepchangelog].
+functionality.
 
 Releases are based on [Semantic Versioning][semver], and use the format
 of `MAJOR.MINOR.PATCH`. In a nutshell, the version will be incremented
@@ -158,7 +157,6 @@ SOFTWARE.
 [discord]: https://discord.me/hassioaddons
 [forum]: https://community.home-assistant.io/t/home-assistant-community-add-on-sqlite-web/68912?u=frenck
 [issue]: https://github.com/hassio-addons/addon-sqlite-web/issues
-[keepchangelog]: http://keepachangelog.com/en/1.0.0/
 [ludeeus]: https://github.com/ludeeus
 [reddit]: https://reddit.com/r/homeassistant
 [releases]: https://github.com/hassio-addons/addon-sqlite-web/releases
