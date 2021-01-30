@@ -15,7 +15,7 @@ RUN \
     g++=9.3.0-r2 \
     gcc=9.3.0-r2 \
     make=4.3-r0 \
-    py3-pip=20.1.1-r0 \
+    py3-pip=20.3.4-r0 \
     python3-dev=3.8.5-r0 \
   \
   && apk add --no-cache \
