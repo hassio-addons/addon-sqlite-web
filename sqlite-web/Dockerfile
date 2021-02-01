@@ -1,4 +1,4 @@
-ARG BUILD_FROM=hassioaddons/base:8.0.5
+ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:9.1.2
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -12,25 +12,25 @@ COPY requirements.txt /tmp/
 ARG BUILD_ARCH=amd64
 RUN \
   apk add --no-cache --virtual .build-dependencies \
-    g++=9.3.0-r2 \
-    gcc=9.3.0-r2 \
+    g++=10.2.1_pre1-r3 \
+    gcc=10.2.1_pre1-r3 \
     make=4.3-r0 \
-    py3-pip=20.1.1-r0 \
-    python3-dev=3.8.5-r0 \
+    py3-pip=20.3.4-r0 \
+    python3-dev=3.8.7-r0 \
   \
   && apk add --no-cache \
-    nginx-mod-http-lua=1.18.0-r1 \
+    nginx-mod-http-lua=1.18.0-r13 \
     lua-resty-http=0.15-r0 \
-    nginx=1.18.0-r1 \
-    cython=0.29.19-r0 \
+    nginx=1.18.0-r13 \
+    cython=0.29.21-r0 \
     patch=2.7.6-r6 \
-    python3=3.8.5-r0 \
-    py3-setuptools=47.0.0-r0 \
+    python3=3.8.7-r0 \
+    py3-setuptools=51.3.3-r0 \
   \
   && pip3 install \
     --no-cache-dir \
     --prefer-binary \
-    --find-links "https://wheels.hass.io/alpine-3.12/${BUILD_ARCH}/" \
+    --find-links "https://wheels.hass.io/alpine-3.13/${BUILD_ARCH}/" \
     -r /tmp/requirements.txt \
   \
   && find /usr/local \
