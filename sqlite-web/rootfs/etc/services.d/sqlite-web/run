@@ -4,18 +4,10 @@
 # Runs SQLite Web
 # ==============================================================================
 declare -a options
-folder_path=/config/
-if bashio::config.has_value 'folder_path'; then
-    folder_path=$(bashio::config 'folder_path')
-fi
 
 options+=(--host 127.0.0.1)
 options+=(--no-browser)
-options+=(-x "$folder_path$(bashio::config 'database_path')")
-
-if bashio::config.true 'read_only'; then
-  options+=(-r)
-fi
+options+=(-x "/config/home-assistant_v2.db")
 
 bashio::log.info 'Starting SQLite Web...'
 

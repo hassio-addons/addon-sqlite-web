@@ -5,17 +5,8 @@
   "description": "Explore your SQLite database",
   "url": "https://github.com/hassio-addons/addon-sqlite-web/tree/main/README.md",
   "ingress": true,
+  "advanced": true,
   "panel_icon": "mdi:database",
   "arch": ["aarch64", "amd64", "armhf", "armv7", "i386"],
-  "map": ["share:rw", "config:rw"],
-  "options": {
-    "database_path": "home-assistant_v2.db",
-    "read_only": true
-  },
-  "schema": {
-    "log_level": "list(trace|debug|info|notice|warning|error|fatal)?",
-    "database_path": "str",
-    "folder_path": "str?",
-    "read_only": "bool"
-  }
+  "map": ["config:rw"]
 }

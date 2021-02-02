@@ -3,10 +3,7 @@
 # Home Assistant Community Add-on: SQLite Web
 # This files adds some patches to the add-on
 # ==============================================================================
-folder_path=/config/
-if bashio::config.has_value 'folder_path'; then
-    folder_path=$(bashio::config 'folder_path')
-fi
+
 # Check if database file exist
 if ! bashio::fs.file_exists "$folder_path$(bashio::config 'database_path')"; then
     bashio::exit.nok 'The configured database file is not found'
