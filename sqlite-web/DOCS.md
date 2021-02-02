@@ -27,10 +27,6 @@ Example add-on configuration:
 log_level: info
 database_path: home-assistant_v2.db
 read_only: true
-datasette: false
-ssl: true
-certfile: fullchain.pem
-keyfile: privkey.pem
 ```
 
 **Note**: _This is just an example, don't copy and past it! Create your own!_
@@ -68,29 +64,6 @@ for example `/share/somefolder/`. Please ensure the trailing slash is set.
 Open the database in read only mode if `true`.
 **It is not recommended setting this to `false`,
 this will enable you to corrupt the database!**
-
-### Option: `datasette`
-
-This option enables the optional service [Datasette]
-that can serve as an API to your DB.
-This endpoint will be exposed to port `6220`
-
-### Option: `ssl`
-
-Enables/Disables SSL (HTTPS) on the web interface of SQLite Web. Set it `true`
-to enable it, `false` otherwise.
-
-### Option: `certfile`
-
-The certificate file to use for SSL.
-
-**Note**: _The file MUST be stored in `/ssl/`, which is the default_
-
-### Option: `keyfile`
-
-The private key file to use for SSL.
-
-**Note**: _The file MUST be stored in `/ssl/`, which is the default_
 
 ## Changelog & Releases
 
@@ -152,7 +125,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 [contributors]: https://github.com/hassio-addons/addon-sqlite-web/graphs/contributors
-[datasette]: https://github.com/simonw/datasette
 [discord-ha]: https://discord.gg/c5DvZ4e
 [discord]: https://discord.me/hassioaddons
 [forum]: https://community.home-assistant.io/t/home-assistant-community-add-on-sqlite-web/68912?u=frenck
