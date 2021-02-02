@@ -9,15 +9,6 @@ if ! bashio::fs.file_exists "$folder_path$(bashio::config 'database_path')"; the
     bashio::exit.nok 'The configured database file is not found'
 fi
 
-# Adds favicon
-mv \
-    /www/favicon.png \
-    /usr/lib/python3.8/site-packages/sqlite_web/static/img/
-
-patch \
-    /usr/lib/python3.8/site-packages/sqlite_web/templates/base.html \
-    /patches/favicon
-
 # Adds buymeacoffe link
 patch \
     /usr/lib/python3.8/site-packages/sqlite_web/templates/base_tables.html \
