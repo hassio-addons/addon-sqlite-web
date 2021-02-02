@@ -1,5 +1,5 @@
 server {
-    listen %%interface%%:%%port%% default_server;
+    listen 8099 default_server;
 
     include /etc/nginx/includes/server_params.conf;
     include /etc/nginx/includes/proxy_params.conf;
@@ -11,7 +11,7 @@ server {
         proxy_pass http://sqlite;
 
         sub_filter_once off;
-        sub_filter 'href="/' 'href="%%ingress_entry%%/';
-        sub_filter '/static/' '%%ingress_entry%%/static/';
+        sub_filter 'href="/' 'href="{{ .entry }}/';
+        sub_filter '/static/' '{{ .entry }}/static/';
     }
 }
