@@ -16,13 +16,13 @@ RUN \
     gcc=10.2.1_pre1-r3 \
     make=4.3-r0 \
     py3-pip=20.3.4-r0 \
-    python3-dev=3.8.7-r1 \
+    python3-dev=3.8.8-r0 \
   \
   && apk add --no-cache \
     nginx=1.18.0-r13 \
     cython=0.29.21-r0 \
     patch=2.7.6-r6 \
-    python3=3.8.7-r1 \
+    python3=3.8.8-r0 \
     py3-setuptools=51.3.3-r0 \
   \
   && pip3 install \
