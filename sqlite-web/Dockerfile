@@ -20,7 +20,7 @@ RUN \
   \
   && apk add --no-cache \
     nginx=1.18.0-r13 \
-    cython=0.29.21-r0 \
+    cython=0.29.21-r1 \
     patch=2.7.6-r6 \
     python3=3.8.8-r0 \
     py3-setuptools=51.3.3-r0 \
