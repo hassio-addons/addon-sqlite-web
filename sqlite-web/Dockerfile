@@ -19,7 +19,7 @@ RUN \
     python3-dev=3.9.7-r4 \
   \
   && apk add --no-cache \
-    nginx=1.20.2-r0 \
+    nginx=1.20.2-r1 \
     cython=0.29.24-r0 \
     patch=2.7.6-r7 \
     python3=3.9.7-r4 \
