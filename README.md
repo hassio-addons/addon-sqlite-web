@@ -70,7 +70,8 @@ our [GitHub Repository][repository].
 
 MIT License
 
-Copyright (c) 2018-2022 Home Assistant Community Add-ons project
+Copyright (c) 2018-2019 Joakim Sørensen
+Copyright (c) 2019-2002 Franck Nijhof
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
