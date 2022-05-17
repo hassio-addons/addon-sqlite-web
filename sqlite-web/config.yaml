@@ -16,3 +16,5 @@ arch:
   - i386
 map:
   - config:rw
+schema:
+  database: "str?"
