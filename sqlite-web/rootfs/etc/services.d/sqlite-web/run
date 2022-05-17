@@ -4,10 +4,16 @@
 # Runs SQLite Web
 # ==============================================================================
 declare -a options
+declare database
+
+database="/config/home-assistant_v2.db"
+if bashio::config.has_value 'database'; then
+    database="$(bashio::config 'database')"
+fi
 
 options+=(--host 127.0.0.1)
 options+=(--no-browser)
-options+=(-x "/config/home-assistant_v2.db")
+options+=(-x "${database}")
 
 bashio::log.info 'Starting SQLite Web...'
 
