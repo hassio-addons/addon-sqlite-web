@@ -7,6 +7,7 @@ url: https://github.com/hassio-addons/addon-sqlite-web/tree/main/README.md
 codenotary: codenotary@frenck.dev
 ingress: true
 advanced: true
+init: true
 panel_icon: mdi:database
 arch:
   - aarch64

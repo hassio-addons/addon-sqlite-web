@@ -1,4 +1,4 @@
-#!/usr/bin/with-contenv bashio
+#!/command/with-contenv bashio
 # ==============================================================================
 # Home Assistant Community Add-on: SQLite Web
 # This files adds some patches to the add-on
