@@ -17,5 +17,6 @@ arch:
   - i386
 map:
   - config:rw
+  - share:rw
 schema:
   database: "str?"
