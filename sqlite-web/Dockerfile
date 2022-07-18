@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:12.0.0
+ARG BUILD_FROM=ghcr.io/hassio-addons/base:12.2.1
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -9,27 +9,16 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 COPY requirements.txt /tmp/
 
 # Setup base
-ARG BUILD_ARCH=amd64
+# hadolint ignore=DL3042
 RUN \
   apk add --no-cache --virtual .build-dependencies \
-    g++=11.2.1_git20220219-r2 \
-    gcc=11.2.1_git20220219-r2 \
-    make=4.3-r0 \
     py3-pip=22.1.1-r0 \
-    python3-dev=3.10.4-r0 \
   \
   && apk add --no-cache \
-    nginx=1.22.0-r0 \
-    cython=0.29.24-r1 \
-    patch=2.7.6-r7 \
+    nginx=1.22.0-r1 \
     python3=3.10.4-r0 \
-    py3-setuptools=59.4.0-r0 \
   \
-  && pip3 install \
-    --no-cache-dir \
-    --prefer-binary \
-    --find-links "https://wheels.hass.io/alpine-3.16/${BUILD_ARCH}/" \
-    -r /tmp/requirements.txt \
+  && pip3 install -r /tmp/requirements.txt \
   \
   && find /usr/local \
     \( -type d -a -name test -o -name tests -o -name '__pycache__' \) \
