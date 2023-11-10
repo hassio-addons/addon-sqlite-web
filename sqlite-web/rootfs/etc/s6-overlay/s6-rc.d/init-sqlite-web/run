@@ -6,7 +6,7 @@
 # ==============================================================================
 declare database
 
-database="/config/home-assistant_v2.db"
+database="/homeassistant/home-assistant_v2.db"
 if bashio::config.has_value 'database'; then
     database="$(bashio::config 'database')"
 fi

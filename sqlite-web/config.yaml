@@ -14,7 +14,7 @@ arch:
   - amd64
   - armv7
 map:
-  - config:rw
+  - homeassistant_config:rw
   - share:rw
 schema:
   database: "str?"
