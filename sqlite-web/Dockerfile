@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/base:14.3.3
+ARG BUILD_FROM=ghcr.io/hassio-addons/base:15.0.1
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -12,11 +12,11 @@ COPY requirements.txt /tmp/
 # hadolint ignore=DL3042
 RUN \
   apk add --no-cache --virtual .build-dependencies \
-    py3-pip=23.1.2-r0 \
+    py3-pip=23.3.1-r0 \
   \
   && apk add --no-cache \
-    nginx=1.24.0-r7 \
-    python3=3.11.6-r0 \
+    nginx=1.24.0-r14 \
+    python3=3.11.6-r1 \
   \
   && pip3 install -r /tmp/requirements.txt \
   \
