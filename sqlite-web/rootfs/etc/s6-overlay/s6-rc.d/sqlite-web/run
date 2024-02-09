@@ -15,7 +15,7 @@ fi
 options+=(--host 127.0.0.1)
 options+=(--no-browser)
 options+=(-x "${database}")
-options+=(--url-prefix $(bashio::addon.ingress_entry))
+options+=(--url-prefix "$(bashio::addon.ingress_entry)")
 
 bashio::log.info 'Starting SQLite Web...'
 
