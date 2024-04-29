@@ -15,7 +15,7 @@ RUN \
     py3-pip=23.3.1-r0 \
   \
   && apk add --no-cache \
-    nginx=1.24.0-r15 \
+    nginx=1.24.0-r16 \
     python3=3.11.9-r0 \
   \
   && pip3 install -r /tmp/requirements.txt \
