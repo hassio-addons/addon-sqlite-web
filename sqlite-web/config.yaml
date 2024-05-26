@@ -15,6 +15,7 @@ arch:
   - armv7
 map:
   - homeassistant_config:rw
+  - all_addon_configs:rw
   - share:rw
 schema:
   database: "str?"
