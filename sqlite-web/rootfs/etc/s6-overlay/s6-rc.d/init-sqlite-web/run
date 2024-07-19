@@ -14,7 +14,3 @@ fi
 if ! bashio::fs.file_exists "${database}"; then
     bashio::exit.nok "The database file '${database}' is not found"
 fi
-
-# Made tables go wide!
-sed -i "s#container#container-fluid#g" \
-    /usr/lib/python3.11/site-packages/sqlite_web/templates/base.html
