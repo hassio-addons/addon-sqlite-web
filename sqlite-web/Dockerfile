@@ -16,7 +16,7 @@ RUN \
   \
   && apk add --no-cache \
     nginx=1.26.2-r0 \
-    python3=3.12.3-r1 \
+    python3=3.12.3-r2 \
   \
   && pip3 install -r /tmp/requirements.txt \
   \
