@@ -3,7 +3,7 @@ name: SQLite Web
 version: dev
 slug: sqlite-web
 description: Explore your SQLite database
-url: https://github.com/hassio-addons/addon-sqlite-web/tree/main/README.md
+url: https://github.com/hassio-addons/app-sqlite-web/tree/main/README.md
 ingress: true
 advanced: true
 init: false

@@ -1,4 +1,4 @@
-# Home Assistant Community Add-on: SQLite Web
+# Home Assistant Community App: SQLite Web
 
 [![GitHub Release][releases-shield]][releases]
 ![Project Stage][project-stage-shield]
@@ -20,7 +20,7 @@ Explore your Home-Assistant database from your web browser!
 
 This enables you to easily explore all tables and content that is saved in your database.
 
-[:books: Read the full add-on documentation][docs]
+[:books: Read the full app documentation][docs]
 
 ![sample view](/images/sample-view.png)
 
@@ -30,7 +30,7 @@ Got questions?
 
 You have several options to get them answered:
 
-- The [Home Assistant Community Add-ons Discord chat server][discord] for add-on
+- The [Home Assistant Community Apps Discord chat server][discord] for app
   support and feature requests.
 - The [Home Assistant Discord chat server][discord-ha] for general Home
   Assistant discussions and questions.
@@ -56,11 +56,11 @@ The original setup of this repository is by [Joakim Sørensen][ludeeus].
 For a full list of all authors and contributors,
 check [the contributor's page][contributors].
 
-## We have got some Home Assistant add-ons for you
+## We have got some Home Assistant apps for you
 
 Want some more functionality to your Home Assistant instance?
 
-We have created multiple add-ons for Home Assistant. For a full list, check out
+We have created multiple apps for Home Assistant. For a full list, check out
 our [GitHub Repository][repository].
 
 ## License
@@ -68,7 +68,7 @@ our [GitHub Repository][repository].
 MIT License
 
 Copyright (c) 2018-2019 Joakim Sørensen
-Copyright (c) 2019-2025 Franck Nijhof
+Copyright (c) 2019-2026 Franck Nijhof
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -90,23 +90,23 @@ SOFTWARE.
 
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
-[commits-shield]: https://img.shields.io/github/commit-activity/y/hassio-addons/addon-sqlite-web.svg
-[commits]: https://github.com/hassio-addons/addon-sqlite-web/commits/main
-[contributors]: https://github.com/hassio-addons/addon-sqlite-web/graphs/contributors
+[commits-shield]: https://img.shields.io/github/commit-activity/y/hassio-addons/app-sqlite-web.svg
+[commits]: https://github.com/hassio-addons/app-sqlite-web/commits/main
+[contributors]: https://github.com/hassio-addons/app-sqlite-web/graphs/contributors
 [discord-ha]: https://discord.gg/c5DvZ4e
 [discord-shield]: https://img.shields.io/discord/478094546522079232.svg
 [discord]: https://discord.me/hassioaddons
-[docs]: https://github.com/hassio-addons/addon-sqlite-web/blob/main/sqlite-web/DOCS.md
+[docs]: https://github.com/hassio-addons/app-sqlite-web/blob/main/sqlite-web/DOCS.md
 [forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg
-[forum]: https://community.home-assistant.io/t/home-assistant-community-add-on-sqlite-web/68912?u=frenck
-[github-actions-shield]: https://github.com/hassio-addons/addon-sqlite-web/workflows/CI/badge.svg
-[github-actions]: https://github.com/hassio-addons/addon-sqlite-web/actions
-[issue]: https://github.com/hassio-addons/addon-sqlite-web/issues
-[license-shield]: https://img.shields.io/github/license/hassio-addons/addon-sqlite-web.svg
+[forum]: https://community.home-assistant.io/t/home-assistant-community-app-sqlite-web/68912?u=frenck
+[github-actions-shield]: https://github.com/hassio-addons/app-sqlite-web/workflows/CI/badge.svg
+[github-actions]: https://github.com/hassio-addons/app-sqlite-web/actions
+[issue]: https://github.com/hassio-addons/app-sqlite-web/issues
+[license-shield]: https://img.shields.io/github/license/hassio-addons/app-sqlite-web.svg
 [ludeeus]: https://github.com/ludeeus
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2025.svg
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2026.svg
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
 [reddit]: https://reddit.com/r/homeassistant
-[releases-shield]: https://img.shields.io/github/release/hassio-addons/addon-sqlite-web.svg
-[releases]: https://github.com/hassio-addons/addon-sqlite-web/releases
+[releases-shield]: https://img.shields.io/github/release/hassio-addons/app-sqlite-web.svg
+[releases]: https://github.com/hassio-addons/app-sqlite-web/releases
 [repository]: https://github.com/hassio-addons/repository
